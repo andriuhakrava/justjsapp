@@ -29,3 +29,55 @@ header {
   font-size: 30px;
 }
 
+.controls-panel {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.controls-panel__column {
+  width: 35%;
+}
+
+.controls-panel__column:first-of-type {
+  width: 65%;
+  margin-right: 15%;
+}
+
+.controls-panel__row {
+  display: flex;
+  border: 1px solid #ffffff;
+}
+
+.controls-panel__row:first-of-type {
+  margin-bottom: 24px;
+}
+
+.controls-panel__item {
+  flex: 1;
+  flex-basis: 25px;
+  padding: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  box-sizing: content-box;
+  text-align: center;
+  border-right: 1px solid #ffffff;
+}
+
+.controls-panel__item:not(.controls-panel__item--active):hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #3596CA;
+}
+
+.controls-panel__item:last-of-type {
+  border-right: none;
+}
+
+.controls-panel__item--active {
+  background: #30cf93;
+  color: #ffffff;
+}
+
