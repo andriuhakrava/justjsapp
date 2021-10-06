@@ -11,6 +11,7 @@ p {
 
 main {
   background: #3596CA;
+  padding: 32px 0;
 }
 
 header, footer {
@@ -29,7 +30,7 @@ header {
   font-size: 30px;
 }
 
-.controls-panel {
+.controls-panel, .character__list {
   display: flex;
   max-width: 1000px;
   width: 100%;
@@ -81,3 +82,47 @@ header {
   color: #ffffff;
 }
 
+.character__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.character__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 12px;
+  background: beige;
+  border: 1px solid rgba(34, 60, 80, 0.5);
+  box-shadow: 3px 6px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+.character__profile {
+  display: flex;
+  align-items: center;
+  flex: 5;
+}
+
+.character__avatar {
+  width: 50px;
+  height: 50px;
+  background: cadetblue;
+  border-radius: 50%;
+}
+
+.character__name {
+  margin-left: 8px;
+}
+
+.character__age {
+  flex: 3;
+}
+
+.character__phone {
+  flex: 4;
+}
+
+.character__star {
+  width: 14px;
+  height: 14px;
+}
