@@ -85,6 +85,8 @@ header {
 .character__list {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  padding-top: 55px;
 }
 
 .character__item {
@@ -97,10 +99,70 @@ header {
   box-shadow: 3px 6px 8px 0 rgba(34, 60, 80, 0.2);
 }
 
+.character__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.character__row--full {
+  justify-content: unset;
+}
+
+.character__card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+  padding: 24px 24px 42px;
+  box-sizing: border-box;
+}
+
+.character__card {
+  align-items: flex-start;
+  min-height: 275px;
+  width: 49%;
+  box-sizing: border-box;
+  padding: 24px 24px 42px;
+}
+
+.character__card--full {
+  width: 100%;
+  padding: 0;
+}
+
+.character__info {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.character__info .character__profile,
+.character__info .character__age,
+.character__info .character__phone {
+  flex: none;
+}
+
+.character__info .character__age,
+.character__info .character__phone {
+  margin-bottom: 24px;
+}
+
+.character__row .character__star {
+  padding-top: 4.2%;
+}
+
 .character__profile {
   display: flex;
   align-items: center;
   flex: 5;
+}
+
+.character__card .character__profile {
+  margin-bottom: 24px;
+}
+
+.character__card .character__profile .character__name {
+  margin-left: 20px;
 }
 
 .character__avatar {
@@ -125,4 +187,20 @@ header {
 .character__star {
   width: 14px;
   height: 14px;
+}
+
+.character__card--video {
+  position: relative;
+  padding-bottom: 29%;
+  width: 51%;
+}
+
+.character__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
