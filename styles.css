@@ -89,6 +89,14 @@ header {
   padding-top: 55px;
 }
 
+.character__list--table {
+  display: flex;
+}
+
+.character__list--preview {
+  display: none;
+}
+
 .character__item {
   display: flex;
   justify-content: space-between;
